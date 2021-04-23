@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+Definida la interfaz XML, nos centramos ya en la parte java de la actividad.
+En primer lugar vamos a crear los fragments que mostraremos al seleccionar cada
+una de las tres opciones del menú de navegación. En este paso no nos vamos a complicar
+ya que no es el objetivo de este artículo. Voy a crear un fragment por cada opción,
+ que contenga tan sólo una etiqueta de texto indicando la opción a la que pertenece.
+ Obviamente en la práctica esto no será tan simple y habrá que definir cada fragment
+ para que se ajuste a las necesidades de la aplicación.
+Como ejemplo muestro el layout XML y la implementación java de uno de los layout.
+Primero el layout (fragment_fragment1.xml) :
+
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragment1">
+
+</FrameLayout>

@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme.
+
+     Para versiones de Android 5.0 o superior (API >= 21) debemos añadir a la
+      definición del tema algunos atributos adicionales, para lo que crearemos
+      un fichero styles.xml específico de dicha versión (/res/values-21/styles.xml)
+       con las siguientes definiciones:
+     -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

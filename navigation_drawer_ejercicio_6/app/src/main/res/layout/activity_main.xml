@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!-- Layout real de la actividad -->
+    <include layout="@layout/content_layout" />
+
+    <!-- Layout del menú lateral (Navigation View)
+
+     • La primera de ellas, android:layout_gravity, determina el lado de la pantalla
+      por el que aparecerá el menú deslizante («start» para que aparezca por la
+       izquierda, o «end» por la derecha).
+    • Con app:headerLayout (opcional) asignamos al menú lateral el layout XML de su
+        cabecera, es decir, de la zona que queda por encima de la lista de opciones
+        del menú.
+    • Por último, con app:menu, indicamos el recurso de menú que mostraremos
+        en el navigation drawer. El componente NavigationView utiliza el sistema de
+        menús habitual de Android, por lo que este menú podemos definirlo de forma
+        análoga
+        a como ya lo hicimos por ejemplo en el artículo dedicado a la action bar para
+        definir el menú de overflow, aunque más adelante mostraremos alguna peculiaridad
+
+
+     -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_navview"
+        app:menu="@menu/menu_navview"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

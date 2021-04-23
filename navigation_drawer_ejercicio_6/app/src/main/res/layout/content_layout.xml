@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Contendrá tan sólo un Toolbar, que estableceremos como action bar en el onCreate()
+de la actividad, y un FrameLayout que nos servirá como contenedor de los fragment
+que contendrán cada sección del menú lateral. Dicho de otra forma, cada sección
+ principal de la aplicación la implementaremos mediante un fragment independiente,
+ y al pulsar cada opción del menú lateral, instanciaremos el fragment de su tipo
+  correspondiente y lo colocaremos en el lugar del FrameLayout indicado
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <!--toolbar -->
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- resto de la interfaz de usuario -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

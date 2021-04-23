@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">crud_4</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">nombre</string>
+    <string name="contrasena">contrasena</string>
+    <string name="ID">ID</string>
+    <string name="loginget">login - get</string>
+    <string name="loginpost">login - post</string>
+    <string name="app">login application</string>
+    <string name="loginstatus">estatus de login</string>
+    <string name="status">no login</string>
+</resources>
